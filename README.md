@@ -7,9 +7,12 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-
 ## demo output: 
 
-https://github.com/user-attachments/assets/8398a67d-8ce6-4c26-b9f6-cf60e190dd10
+https://github.com/user-attachments/assets/fe44511a-7ae2-4198-a62c-e46ce24bd13c
+
+
+
+
 
 
