@@ -60,42 +60,6 @@ const AnalyticsSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-8">
-          {/* Velocity Trends */}
-          <Card className="hover:shadow-card transition-smooth">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Zap className="w-5 h-5 text-velocity-orange" />
-                Velocity Trends
-              </CardTitle>
-              <CardDescription>
-                Shuttle speed throughout the match
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="bg-card rounded-lg p-6">
-                <div className="space-y-4">
-                  <div className="grid grid-cols-7 gap-2 text-center text-xs font-medium">
-                    <div className="bg-velocity-orange/20 p-2 rounded">Mon</div>
-                    <div className="bg-kompte-purple/20 p-2 rounded">Tue</div>
-                    <div className="bg-accuracy-green/20 p-2 rounded">Wed</div>
-                    <div className="bg-data-blue/20 p-2 rounded">Thu</div>
-                    <div className="bg-velocity-orange/20 p-2 rounded">Fri</div>
-                    <div className="bg-kompte-purple/20 p-2 rounded">Sat</div>
-                    <div className="bg-accuracy-green/20 p-2 rounded">Sun</div>
-                  </div>
-                  <div className="text-center space-y-2">
-                    <p className="text-2xl font-bold text-velocity-orange">89.5 km/h</p>
-                    <p className="text-sm text-muted-foreground">Average velocity this week</p>
-                    <div className="flex items-center justify-center gap-2">
-                      <TrendingUp className="w-4 h-4 text-accuracy-green" />
-                      <span className="text-sm text-accuracy-green">+12% from last week</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
           {/* Performance Radar */}
           <Card className="hover:shadow-card transition-smooth">
             <CardHeader>
@@ -126,9 +90,7 @@ const AnalyticsSection = () => {
               </div>
             </CardContent>
           </Card>
-        </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
           {/* Shot Type Distribution */}
           <Card className="hover:shadow-card transition-smooth">
             <CardHeader>
@@ -153,7 +115,9 @@ const AnalyticsSection = () => {
               </div>
             </CardContent>
           </Card>
+        </div>
 
+        <div className="grid lg:grid-cols-2 gap-8">
           {/* Match Summary */}
           <Card className="hover:shadow-card transition-smooth">
             <CardHeader>

@@ -376,26 +376,26 @@ const StaminaSection = () => {
               </ChartContainer>
               
               {/* Weekly Summary */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="text-center p-6 rounded-2xl bg-gradient-to-br from-data-blue/10 to-data-blue/5 border border-data-blue/20">
-                  <div className="text-4xl font-bold text-data-blue mb-2">82.3%</div>
-                  <div className="text-sm text-muted-foreground mb-2">Weekly Average</div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="text-center p-4 rounded-2xl bg-gradient-to-br from-data-blue/10 to-data-blue/5 border border-data-blue/20 min-h-[120px] flex flex-col justify-center">
+                  <div className="text-2xl md:text-3xl font-bold text-data-blue mb-1">82.3%</div>
+                  <div className="text-xs md:text-sm text-muted-foreground mb-2">Weekly Average</div>
                   <div className="flex items-center justify-center">
-                    <TrendingUp className="w-4 h-4 text-accuracy-green mr-1" />
-                    <span className="text-accuracy-green font-medium text-sm">+12% improvement</span>
+                    <TrendingUp className="w-3 h-3 md:w-4 md:h-4 text-accuracy-green mr-1" />
+                    <span className="text-accuracy-green font-medium text-xs md:text-sm">+12% improvement</span>
                   </div>
                 </div>
                 
-                <div className="text-center p-6 rounded-2xl bg-gradient-to-br from-accuracy-green/10 to-accuracy-green/5 border border-accuracy-green/20">
-                  <div className="text-4xl font-bold text-accuracy-green mb-2">Saturday</div>
-                  <div className="text-sm text-muted-foreground mb-2">Peak Day</div>
-                  <div className="text-lg font-semibold text-accuracy-green">92% stamina</div>
+                <div className="text-center p-4 rounded-2xl bg-gradient-to-br from-accuracy-green/10 to-accuracy-green/5 border border-accuracy-green/20 min-h-[120px] flex flex-col justify-center">
+                  <div className="text-xl md:text-2xl font-bold text-accuracy-green mb-1">Saturday</div>
+                  <div className="text-xs md:text-sm text-muted-foreground mb-2">Peak Day</div>
+                  <div className="text-sm md:text-base font-semibold text-accuracy-green">92% stamina</div>
                 </div>
                 
-                <div className="text-center p-6 rounded-2xl bg-gradient-to-br from-velocity-orange/10 to-velocity-orange/5 border border-velocity-orange/20">
-                  <div className="text-4xl font-bold text-velocity-orange mb-2">Sunday</div>
-                  <div className="text-sm text-muted-foreground mb-2">Recovery Day</div>
-                  <div className="text-lg font-semibold text-velocity-orange">75% stamina</div>
+                <div className="text-center p-4 rounded-2xl bg-gradient-to-br from-velocity-orange/10 to-velocity-orange/5 border border-velocity-orange/20 min-h-[120px] flex flex-col justify-center">
+                  <div className="text-xl md:text-2xl font-bold text-velocity-orange mb-1">Sunday</div>
+                  <div className="text-xs md:text-sm text-muted-foreground mb-2">Recovery Day</div>
+                  <div className="text-sm md:text-base font-semibold text-velocity-orange">75% stamina</div>
                 </div>
               </div>
             </CardContent>

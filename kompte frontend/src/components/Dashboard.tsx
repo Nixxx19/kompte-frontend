@@ -38,7 +38,7 @@ const Dashboard = () => {
             <CardContent className="p-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm font-medium text-muted-foreground">Avg Velocity</p>
+                  <p className="text-sm font-medium text-muted-foreground">Avg Stamina</p>
                   <p className="text-2xl font-bold">89.5 km/h</p>
                   <p className="text-xs text-velocity-orange flex items-center mt-1">
                     <TrendingUp className="w-3 h-3 mr-1" />
