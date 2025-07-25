@@ -13,10 +13,10 @@ const HeroSection = () => {
           {/* Left Content */}
           <div className="animate-fade-in">
             <div className="mb-8">
-              <h1 className="text-6xl md:text-8xl font-black text-foreground mb-4 tracking-tight">
+              <h1 className="text-6xl md:text-8xl font-black text-foreground mb- tracking-tight">
                 KOMPTE<span className="text-primary">.</span>
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-2 font-medium">
+              <p className="text-xl md:text-2xl font-semibold text-muted-foreground mb-2 font-medium">
                 Crafting Champions Since 2022.
               </p>
               <p className="text-2xl md:text-3xl text-foreground font-semibold">
