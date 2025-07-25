@@ -63,9 +63,14 @@ const UploadSection = () => {
                 <p className="text-sm text-muted-foreground mb-6">
                   or click to browse files
                 </p>
-                <Button variant="kompte" size="lg" className="font-semibold">
-                  Select Video File
-                </Button>
+                <div className="flex justify-center gap-4">
+                 <Button variant="kompte" size="lg" className="font-semibold">
+                    Select Video File
+                 </Button>
+                 <Button variant="kompte" size="lg" className="font-semibold">
+                    Record Live Video
+                 </Button>
+                </div>
               </div>
               <p className="text-xs text-muted-foreground">
                 Supported formats: MP4, MOV, AVI • Recommended: 1080p, 30+ fps, clear court view

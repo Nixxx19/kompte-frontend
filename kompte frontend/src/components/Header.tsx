@@ -28,6 +28,10 @@ const Header = () => {
             </Button>
             <Button variant="ghost" size="sm">
               <Settings className="w-4 h-4" />
+              Drill
+            </Button>
+            <Button variant="ghost" size="sm">
+              <Settings className="w-4 h-4" />
               Calibration
             </Button>
           </nav>

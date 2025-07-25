@@ -72,21 +72,21 @@ const StaminaSection = () => {
         </div>
 
         {/* Premium Stamina Overview Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-12">
           {/* Average Stamina Card */}
           <Card className="group relative overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105 border-0 bg-gradient-to-br from-card via-card/95 to-card/80 backdrop-blur-xl glow-primary">
             <div className="absolute inset-0 bg-gradient-to-br from-kompte-purple/5 to-transparent"></div>
             <CardHeader className="relative flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium text-muted-foreground">Average Stamina</CardTitle>
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-velocity-orange/20 to-velocity-orange/30 flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
-                <Zap className="w-7 h-7 text-velocity-orange" />
+              <CardTitle className="text-2xl font-medium font-semibold text-muted-foreground">Average<br/>Stamina</CardTitle>
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-velocity-orange/20 to-velocity-orange/30 flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                <Zap className="w-10 h-11 text-velocity-orange" />
               </div>
             </CardHeader>
             <CardContent className="relative">
-              <div className="text-4xl font-bold text-foreground mb-2 tracking-tight">{currentStamina}%</div>
+              <div className="text-5xl font-bold text-foreground mb-2 tracking-tight">{currentStamina}%</div>
               <div className="flex items-center text-sm">
-                <TrendingUp className="w-4 h-4 text-accuracy-green mr-1" />
-                <span className="text-accuracy-green font-medium">+{weeklyImprovement}% this week</span>
+                <TrendingUp className="w-6 h-8 text-accuracy-green mr-2" />
+                <span className="text-accuracy-green font-medium">{weeklyImprovement}% this week</span>
               </div>
             </CardContent>
           </Card>
@@ -95,34 +95,34 @@ const StaminaSection = () => {
           <Card className="group relative overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105 border-0 bg-gradient-to-br from-card via-card/95 to-card/80 backdrop-blur-xl glow-secondary">
             <div className="absolute inset-0 bg-gradient-to-br from-data-blue/5 to-transparent"></div>
             <CardHeader className="relative flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium text-muted-foreground">Peak Performance</CardTitle>
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-data-blue/20 to-data-blue/30 flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
-                <Trophy className="w-7 h-7 text-data-blue" />
+              <CardTitle className="text-2xl font-medium font-semibold text-muted-foreground">Peak<br/>Performance</CardTitle>
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-data-blue/20 to-data-blue/30 flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                <Trophy className="w-10 h-11 text-data-blue" />
               </div>
             </CardHeader>
             <CardContent className="relative">
-              <div className="text-4xl font-bold text-foreground mb-2 tracking-tight">98%</div>
+              <div className="text-5xl font-bold text-foreground mb-2 tracking-tight">98%</div>
               <div className="flex items-center text-sm">
-                <Target className="w-4 h-4 text-data-blue mr-1" />
-                <span className="text-muted-foreground">Saturday peak</span>
+                <Target className="w-6 h-8 text-data-blue mr-2" />
+                <span className="text-muted-foreground font-medium">Saturday peak</span>
               </div>
             </CardContent>
           </Card>
 
-          {/* Endurance Duration */}
+          {/* Best Duration */}
           <Card className="group relative overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105 border-0 bg-gradient-to-br from-card via-card/95 to-card/80 backdrop-blur-xl">
             <div className="absolute inset-0 bg-gradient-to-br from-kompte-purple/5 to-transparent"></div>
             <CardHeader className="relative flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium text-muted-foreground">Best Duration</CardTitle>
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-kompte-purple/20 to-kompte-purple/30 flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
-                <Clock className="w-7 h-7 text-kompte-purple" />
+              <CardTitle className="text-2xl font-medium font-semibold text-muted-foreground">Best<br/>Duration</CardTitle>
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-kompte-purple/20 to-kompte-purple/30 flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                <Clock className="w-10 h-11 text-kompte-purple" />
               </div>
             </CardHeader>
             <CardContent className="relative">
-              <div className="text-4xl font-bold text-foreground mb-2 tracking-tight">37:10</div>
+              <div className="text-5xl font-bold text-foreground mb-2 tracking-tight">37:10</div>
               <div className="flex items-center text-sm">
-                <Activity className="w-4 h-4 text-kompte-purple mr-1" />
-                <span className="text-muted-foreground">Session length</span>
+                <Activity className="w-6 h-8 text-kompte-purple mr-2" />
+                <span className="text-muted-foreground font-medium">Session length</span>
               </div>
             </CardContent>
           </Card>
@@ -131,15 +131,15 @@ const StaminaSection = () => {
           <Card className="group relative overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105 border-0 bg-gradient-to-br from-card via-card/95 to-card/80 backdrop-blur-xl">
             <div className="absolute inset-0 bg-gradient-to-br from-accuracy-green/5 to-transparent"></div>
             <CardHeader className="relative flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium text-muted-foreground">Recovery Rate</CardTitle>
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-accuracy-green/20 to-accuracy-green/30 flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
-                <TrendingUp className="w-7 h-7 text-accuracy-green" />
+              <CardTitle className="text-2xl font-medium font-semibold text-muted-foreground">Recovery<br/>Rate</CardTitle>
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-accuracy-green/20 to-accuracy-green/30 flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                <TrendingUp className="w-10 h-11 text-accuracy-green" />
               </div>
             </CardHeader>
             <CardContent className="relative">
-              <div className="text-4xl font-bold text-foreground mb-2 tracking-tight">Elite</div>
+              <div className="text-5xl font-bold text-foreground mb-3 tracking-tight">Elite</div>
               <div className="flex items-center text-sm">
-                <Badge variant="secondary" className="text-accuracy-green bg-accuracy-green-light/20 border-accuracy-green/30">
+                <Badge variant="secondary" className="text-accuracy-green bg-accuracy-green-light/15 border-accuracy-green/30">
                   Top 5%
                 </Badge>
               </div>
@@ -156,17 +156,17 @@ const StaminaSection = () => {
               <div className="flex items-center justify-between">
                 <div>
                   <CardTitle className="flex items-center gap-3 text-2xl font-bold bg-gradient-to-r from-foreground to-kompte-purple bg-clip-text text-transparent">
-                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-velocity-orange/20 to-velocity-orange/30 flex items-center justify-center">
-                      <Zap className="w-6 h-6 text-velocity-orange" />
+                    <div className="w-16 h-14 rounded-xl bg-gradient-to-br from-velocity-orange/20 to-velocity-orange/30 flex items-center justify-center">
+                      <Zap className="w-12 h-10 text-velocity-orange" />
                     </div>
                     Rally Stamina Timeline
                   </CardTitle>
-                  <CardDescription className="mt-3 text-base">
+                  <CardDescription className="mt-3 text-md font-semibold">
                     Real-time stamina tracking with precise rally timing and game context
                   </CardDescription>
                 </div>
                 <Button variant="outline" size="sm" className="hover:bg-kompte-purple/10 hover:border-kompte-purple/30 transition-all duration-300">
-                  <Activity className="w-4 h-4 mr-2" />
+                  <Activity className="w-4 h-4 mr-0" />
                   Export Analysis
                 </Button>
               </div>
@@ -268,15 +268,15 @@ const StaminaSection = () => {
               <div className="mt-6 p-5 bg-gradient-to-r from-muted/30 via-muted/20 to-muted/30 rounded-xl border border-border/30">
                 <div className="grid grid-cols-3 gap-4 text-center">
                   <div className="space-y-1">
-                    <div className="text-xs text-muted-foreground uppercase tracking-wide">Current Stamina</div>
+                    <div className="text-xs text-muted-foreground uppercase tracking-wide font-semibold">Current Stamina</div>
                     <div className="text-2xl font-bold text-velocity-orange">55%</div>
                   </div>
                   <div className="space-y-1">
-                    <div className="text-xs text-muted-foreground uppercase tracking-wide">Match Duration</div>
+                    <div className="text-xs text-muted-foreground uppercase tracking-wide font-semibold">Match Duration</div>
                     <div className="text-2xl font-bold text-kompte-purple">37:10</div>
                   </div>
                   <div className="space-y-1">
-                    <div className="text-xs text-muted-foreground uppercase tracking-wide">Peak Stamina</div>
+                    <div className="text-xs text-muted-foreground uppercase tracking-wide font-semibold">Peak Stamina</div>
                     <div className="text-2xl font-bold text-accuracy-green">100%</div>
                   </div>
                 </div>
@@ -376,25 +376,25 @@ const StaminaSection = () => {
               </ChartContainer>
               
               {/* Weekly Summary */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div className="text-center p-4 rounded-2xl bg-gradient-to-br from-data-blue/10 to-data-blue/5 border border-data-blue/20 min-h-[120px] flex flex-col justify-center">
-                  <div className="text-2xl md:text-3xl font-bold text-data-blue mb-1">82.3%</div>
-                  <div className="text-xs md:text-sm text-muted-foreground mb-2">Weekly Average</div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-2.5">
+                <div className="text-center p-1 rounded-2xl bg-gradient-to-br from-data-blue/10 to-data-blue/5 border border-data-blue/20 min-h-[180px] flex flex-col justify-center">
+                  <div className="text-xl md:text-3xl font-bold text-data-blue mb-1">82.3%</div>
+                  <div className="text-xs md:text-md text-muted-foreground mb-1">Weekly<br/>Average</div>
                   <div className="flex items-center justify-center">
-                    <TrendingUp className="w-3 h-3 md:w-4 md:h-4 text-accuracy-green mr-1" />
-                    <span className="text-accuracy-green font-medium text-xs md:text-sm">+12% improvement</span>
+                    <TrendingUp className=" md:w-5 md:h-8 text-accuracy-green mr-1"/>
+                    <span className="text-accuracy-green font-medium text-xs md:text-sm">12% improve</span>
                   </div>
                 </div>
                 
-                <div className="text-center p-4 rounded-2xl bg-gradient-to-br from-accuracy-green/10 to-accuracy-green/5 border border-accuracy-green/20 min-h-[120px] flex flex-col justify-center">
-                  <div className="text-xl md:text-2xl font-bold text-accuracy-green mb-1">Saturday</div>
-                  <div className="text-xs md:text-sm text-muted-foreground mb-2">Peak Day</div>
+                <div className="text-center p-1 rounded-2xl bg-gradient-to-br from-accuracy-green/10 to-accuracy-green/5 border border-accuracy-green/20 min-h-[180px] flex flex-col justify-center">
+                  <div className="text-xl md:text-3xl font-bold text-accuracy-green mb-1">Saturday</div>
+                  <div className="text-xs md:text-md text-muted-foreground mb-1">Peak<br/>Day</div>
                   <div className="text-sm md:text-base font-semibold text-accuracy-green">92% stamina</div>
                 </div>
                 
-                <div className="text-center p-4 rounded-2xl bg-gradient-to-br from-velocity-orange/10 to-velocity-orange/5 border border-velocity-orange/20 min-h-[120px] flex flex-col justify-center">
-                  <div className="text-xl md:text-2xl font-bold text-velocity-orange mb-1">Sunday</div>
-                  <div className="text-xs md:text-sm text-muted-foreground mb-2">Recovery Day</div>
+                <div className="text-center p-1 rounded-2xl bg-gradient-to-br from-velocity-orange/10 to-velocity-orange/5 border border-velocity-orange/20 min-h-[180px] flex flex-col justify-center">
+                  <div className="text-xl md:text-3xl font-bold text-velocity-orange mb-1">Sunday</div>
+                  <div className="text-xs md:text-md text-muted-foreground mb-1">Recovery<br/>Day</div>
                   <div className="text-sm md:text-base font-semibold text-velocity-orange">75% stamina</div>
                 </div>
               </div>
@@ -402,12 +402,12 @@ const StaminaSection = () => {
           </Card>
         </div>
 
-        {/* AI Recommendations */}
+        {/* AI Stamina Insights */}
         <div className="mt-8">
           <Card className="group hover:shadow-xl transition-all duration-500 border-border/50 bg-card/80 backdrop-blur-sm">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-xl">
-                <Activity className="w-5 h-5 text-primary" />
+              <CardTitle className="flex items-center gap-2 text-2xl">
+                <Activity className="w-7 h-8 text-primary" />
                 AI Stamina Insights
               </CardTitle>
               <CardDescription>

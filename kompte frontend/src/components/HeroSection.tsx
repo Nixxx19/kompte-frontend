@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Play, TrendingUp, Target, Clock } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Play, TrendingUp, Target, Zap, Clock } from "lucide-react";
 import heroCourt from "@/assets/hero-court.jpg";
 
 const HeroSection = () => {
@@ -8,8 +8,7 @@ const HeroSection = () => {
     <section className="relative min-h-screen bg-kompte-navy overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-kompte-purple/5 to-kompte-navy" />
-      
-      <div className="relative container mx-auto px-6 py-20">
+      <div className="relative container mx-auto px-6 py-20"/>
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
           {/* Left Content */}
           <div className="animate-fade-in">
@@ -65,47 +64,50 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Feature Cards */}
-        <div className="mt-20">
-          <div className="grid md:grid-cols-3 gap-6 animate-slide-up">
-            <Card className="bg-card/80 backdrop-blur-sm border-border hover:shadow-performance transition-smooth hover:bg-card/90">
-              <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-accuracy-green rounded-lg mx-auto mb-4 flex items-center justify-center">
-                  <Target className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Court Heatmaps</h3>
-                <p className="text-muted-foreground">
-                  Visualize shuttle impact zones with precision heat mapping
-                </p>
-              </CardContent>
-            </Card>
+        {/* Feature Cards - Redesigned like Premium Stamina Overview Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 mt-1">
+          {/* Court Heatmaps */}
+          <Card className="group relative overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105 border-0 bg-gradient-to-br from-card via-card/95 to-card/80 backdrop-blur-xl">
+            <div className="absolute inset-0 bg-gradient-to-br from-accuracy-green/5 to-transparent"></div>
+            <CardHeader className="relative flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-4xl font-large text-foreground">Court Heatmaps</CardTitle>
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-accuracy-green/20 to-accuracy-green/30 flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                <Target className="w-11 h-11 text-accuracy-green" />
+              </div>
+            </CardHeader>
+            <CardContent className="relative">
+              <p className="text-2xl text-muted-foreground">Visualize shuttle impact zones with precision heat mapping.</p>
+            </CardContent>
+          </Card>
 
-            <Card className="bg-card/80 backdrop-blur-sm border-border hover:shadow-performance transition-smooth hover:bg-card/90">
-              <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-velocity-orange rounded-lg mx-auto mb-4 flex items-center justify-center">
-                  <TrendingUp className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Stamina Analysis</h3>
-                <p className="text-muted-foreground">
-                  Track shuttle speed and performance trends over time
-                </p>
-              </CardContent>
-            </Card>
+          {/* Stamina Analysis */}
+          <Card className="group relative overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105 border-0 bg-gradient-to-br from-card via-card/95 to-card/80 backdrop-blur-xl">
+            <div className="absolute inset-0 bg-gradient-to-br from-velocity-orange/5 to-transparent"></div>
+            <CardHeader className="relative flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-4xl font-large text-foreground">Stamina Analysis</CardTitle>
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-velocity-orange/20 to-velocity-orange/30 flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                <Zap className="w-11 h-11 text-velocity-orange" />
+              </div>
+            </CardHeader>
+            <CardContent className="relative">
+              <p className="text-2xl text-muted-foreground">Track shuttle speed and performance trends over time.</p>
+            </CardContent>
+          </Card>
 
-            <Card className="bg-card/80 backdrop-blur-sm border-border hover:shadow-performance transition-smooth hover:bg-card/90">
-              <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-data-blue rounded-lg mx-auto mb-4 flex items-center justify-center">
-                  <Clock className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Reaction Insights</h3>
-                <p className="text-muted-foreground">
-                  Analyze pickup timing and reaction performance
-                </p>
-              </CardContent>
-            </Card>
-          </div>
+          {/* Reaction Insights */}
+          <Card className="group relative overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105 border-0 bg-gradient-to-br from-card via-card/95 to-card/80 backdrop-blur-xl">
+            <div className="absolute inset-0 bg-gradient-to-br from-data-blue/5 to-transparent"></div>
+            <CardHeader className="relative flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-4xl font-medium text-foreground">Reaction Insights</CardTitle>
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-data-blue/20 to-data-blue/30 flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                <Clock className="w-11 h-11 text-data-blue" />
+              </div>
+            </CardHeader>
+            <CardContent className="relative">
+              <p className="text-2xl text-muted-foreground">Analyze pickup timing and reaction performance of the player.</p>
+            </CardContent>
+          </Card>
         </div>
-      </div>
     </section>
   );
 };
