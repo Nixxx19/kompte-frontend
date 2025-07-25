@@ -8,7 +8,7 @@ const HeroSection = () => {
     <section className="relative min-h-screen bg-kompte-navy overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-kompte-purple/5 to-kompte-navy" />
-      <div className="relative container mx-auto px-6 py-20"/>
+      <div className="relative container mx-0 px-14 py-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
           {/* Left Content */}
           <div className="animate-fade-in">
@@ -65,12 +65,12 @@ const HeroSection = () => {
         </div>
 
         {/* Feature Cards - Redesigned like Premium Stamina Overview Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 mt-1">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-11 mt-1">
           {/* Court Heatmaps */}
           <Card className="group relative overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105 border-0 bg-gradient-to-br from-card via-card/95 to-card/80 backdrop-blur-xl">
             <div className="absolute inset-0 bg-gradient-to-br from-accuracy-green/5 to-transparent"></div>
             <CardHeader className="relative flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-4xl font-large text-foreground">Court Heatmaps</CardTitle>
+              <CardTitle className="text-3xl font-large text-foreground">Court Heatmaps</CardTitle>
               <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-accuracy-green/20 to-accuracy-green/30 flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
                 <Target className="w-11 h-11 text-accuracy-green" />
               </div>
@@ -84,7 +84,7 @@ const HeroSection = () => {
           <Card className="group relative overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105 border-0 bg-gradient-to-br from-card via-card/95 to-card/80 backdrop-blur-xl">
             <div className="absolute inset-0 bg-gradient-to-br from-velocity-orange/5 to-transparent"></div>
             <CardHeader className="relative flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-4xl font-large text-foreground">Stamina Analysis</CardTitle>
+              <CardTitle className="text-3xl font-large text-foreground">Stamina Analysis</CardTitle>
               <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-velocity-orange/20 to-velocity-orange/30 flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
                 <Zap className="w-11 h-11 text-velocity-orange" />
               </div>
@@ -98,7 +98,7 @@ const HeroSection = () => {
           <Card className="group relative overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105 border-0 bg-gradient-to-br from-card via-card/95 to-card/80 backdrop-blur-xl">
             <div className="absolute inset-0 bg-gradient-to-br from-data-blue/5 to-transparent"></div>
             <CardHeader className="relative flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-4xl font-medium text-foreground">Reaction Insights</CardTitle>
+              <CardTitle className="text-3xl font-medium text-foreground">Reaction Insights</CardTitle>
               <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-data-blue/20 to-data-blue/30 flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
                 <Clock className="w-11 h-11 text-data-blue" />
               </div>
@@ -108,6 +108,7 @@ const HeroSection = () => {
             </CardContent>
           </Card>
         </div>
+      </div> 
     </section>
   );
 };
