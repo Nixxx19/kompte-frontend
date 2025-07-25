@@ -8,7 +8,7 @@ const HeroSection = () => {
     <section className="relative min-h-screen bg-kompte-navy overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-kompte-purple/5 to-kompte-navy" />
-      <div className="relative container mx-0 px-14 py-10">
+      <div className="relative container mx-auto px-14 py-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
           {/* Left Content */}
           <div className="animate-fade-in">
