@@ -9,10 +9,5 @@ This project is built with:
 
 ## demo output: 
 
-https://github.com/user-attachments/assets/fe44511a-7ae2-4198-a62c-e46ce24bd13c
-
-
-
-
-
+https://github.com/user-attachments/assets/ab3b0f5a-9ea7-4c19-bdc2-383bb71481bb
 
